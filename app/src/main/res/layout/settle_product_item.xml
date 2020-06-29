@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="170dp">
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_x="9dp"
+        android:layout_y="21dp"
+        android:id="@+id/item_picture"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="18dp"
+        android:id="@+id/item_product"
+        android:textSize="16sp"
+        android:textColor="?android:attr/actionMenuTextColor"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="190dp"
+        android:layout_y="123dp"
+        android:id="@+id/item_count_price"/>
+
+    <TextView
+        android:text="商品总价："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="122dp"
+        android:id="@+id/textView48"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="223dp"
+        android:layout_y="50dp"
+        android:id="@+id/item_number"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="223dp"
+        android:layout_y="18dp"
+        android:id="@+id/item_price"/>
+</AbsoluteLayout>

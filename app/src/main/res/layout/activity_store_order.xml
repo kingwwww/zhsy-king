@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.eatapplication.activity.store.StoreOrderActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:text="待接订单信息"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text_title"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_weight="0.73"
+        android:id="@+id/data_container">
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_weight="0.25">
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            app:srcCompat="@drawable/notpac"
+            android:layout_x="30dp"
+            android:layout_y="14dp"
+            android:id="@+id/image_undeal"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/refuse"
+            android:layout_x="149dp"
+            android:layout_y="10dp"
+            android:id="@+id/image_failed"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/finish"
+            android:layout_x="253dp"
+            android:layout_y="10dp"
+            android:id="@+id/image_finish"/>
+
+        <TextView
+            android:text="未接单"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_x="33dp"
+            android:layout_y="60dp"
+            android:id="@+id/textView47"/>
+
+        <TextView
+            android:text="已完成"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_x="255dp"
+            android:layout_y="59dp"
+            android:id="@+id/textView46"/>
+
+        <TextView
+            android:text="已取消"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_x="149dp"
+            android:layout_y="61dp"
+            android:id="@+id/textView49"/>
+    </AbsoluteLayout>
+</LinearLayout>

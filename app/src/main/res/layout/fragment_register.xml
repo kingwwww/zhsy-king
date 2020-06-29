@@ -1,0 +1,143 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.lenovo.eatapplication.fragment.enter.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:layout_x="137dp"
+        android:layout_y="10dp"
+        android:scaleType="fitXY"
+        android:id="@+id/image_reg_portrait"
+        />
+
+    <TextView
+        android:text="上传头像"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="37dp"
+        android:layout_y="65dp"
+        android:id="@+id/textView7"/>
+
+    <TextView
+        android:text="眠称："
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_x="52dp"
+        android:layout_y="178dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="113dp"
+        android:layout_y="170dp"
+        android:id="@+id/edit_reg_name"
+        android:hint="输入眠称"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="112dp"
+        android:layout_y="228dp"
+        android:id="@+id/edit_reg_phone"
+        android:hint="请输入电话"
+        />
+
+    <TextView
+        android:text="电话："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="237dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="密码："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="294dp"
+        android:id="@+id/textView4"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_x="112dp"
+        android:layout_y="285dp"
+        android:hint="输入密码"
+        android:id="@+id/edit_reg_password"/>
+
+    <TextView
+        android:text="确认密码："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="350dp"
+        android:id="@+id/textView5"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_x="113dp"
+        android:layout_y="343dp"
+        android:id="@+id/edit_reg_repeat"
+        android:hint="确认密码"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_x="37dp"
+        android:layout_y="394dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:text="用户注册"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_x="39dp"
+            android:layout_y="390dp"
+            android:id="@+id/radio_reg_user"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:text="商户注册"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_x="209dp"
+            android:layout_y="389dp"
+            android:id="@+id/radio_reg_store"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:text="立即注册"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_x="99dp"
+        android:layout_y="436dp"
+        android:id="@+id/btn_register"/>
+</AbsoluteLayout>

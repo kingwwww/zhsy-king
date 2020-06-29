@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="23dp"
+        android:layout_y="8dp"
+        android:id="@+id/address_show_name"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="112dp"
+        android:layout_y="9dp"
+        android:id="@+id/address_show_phone"/>
+
+    <TextView
+        android:layout_width="219dp"
+        android:layout_height="35dp"
+        android:layout_x="22dp"
+        android:layout_y="36dp"
+        android:id="@+id/address_show_detail"
+        android:inputType="textMultiLine"
+        android:text="TextView"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/cycle"
+        android:layout_gravity="center"
+        android:id="@+id/address_delete"
+        android:layout_weight="1"
+        android:layout_x="270dp"
+        android:layout_y="25dp"/>
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        app:srcCompat="@drawable/update"
+        android:layout_gravity="center"
+        android:id="@+id/address_update"
+        android:layout_weight="1"
+        android:layout_x="235dp"
+        android:layout_y="27dp"/>
+</AbsoluteLayout>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/mainLayout"
+              android:orientation="vertical"
+              tools:context="com.example.lenovo.eatapplication.fragment.user.ShoppingFragment"
+              android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/shop_store_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="?android:attr/actionMenuTextColor"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="25dp"
+            android:id="@+id/shop_store_desc"
+            />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:id="@+id/shop_store_phone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:gravity="center"
+        >
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/store_video"
+            android:scaleX="1.5"
+            android:scaleY="1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="70dp"
+            android:layout_height="259dp"
+            android:id="@+id/product_classify"
+            android:layout_marginLeft="5dp"
+            tools:context="com.example.lenovo.product.fragment.ProductListFragment"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="298dp"
+            android:layout_height="259dp"
+            android:id="@+id/product_recyclerView"
+            tools:context="com.example.lenovo.product.fragment.ProductListFragment"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="60dp"
+            android:id="@+id/carView"
+            app:srcCompat="@drawable/shopcar"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:text="选点什么吧..."
+                android:layout_width="122dp"
+                android:layout_height="65dp"
+                android:id="@+id/countPrice"
+                android:gravity="center_vertical|left"
+                android:layout_weight="0.25"/>
+
+            <Button
+                android:text="去结算"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/sendbutton"
+                android:layout_weight="0.54"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

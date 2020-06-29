@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="20dp"
+        android:layout_y="90dp"
+        android:id="@+id/address_phone"
+        android:hint="手机号码"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="20dp"
+        android:layout_y="26dp"
+        android:id="@+id/address_name"
+        android:hint="收货人"
+        />
+
+    <EditText
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_x="19dp"
+        android:layout_y="158dp"
+        android:id="@+id/address_detail"
+        android:hint="详细地址：如道路、门牌号、小区、楼栋号、单元、室等"
+        />
+</AbsoluteLayout>

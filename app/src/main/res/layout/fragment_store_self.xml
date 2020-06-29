@@ -1,0 +1,135 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:gravity="center"
+             tools:context="com.example.lenovo.eatapplication.fragment.store.StoreSelfFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="[仅支持mp4格式文件且小于20m]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="65dp"
+        android:layout_y="151dp"
+        android:id="@+id/textView10"
+        />
+
+    <Button
+        android:text="更换店面宣传视频"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="98dp"
+        android:layout_y="168dp"
+        android:id="@+id/change_video"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="100dp"
+        android:layout_y="213dp"
+        android:id="@+id/store_name"/>
+
+    <EditText
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="100dp"
+        android:layout_y="331dp"
+        android:id="@+id/store_pswd"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="98dp"
+        android:layout_y="389dp"
+        android:id="@+id/store_desc"/>
+
+    <Button
+        android:text="返回主页"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_x="37dp"
+        android:layout_y="442dp"
+        android:id="@+id/btn_return"/>
+
+    <Button
+        android:text="保存"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_x="188dp"
+        android:layout_y="442dp"
+        android:id="@+id/btn_save"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:gravity="center"
+       >
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:id="@+id/video_desc"
+            android:layout_weight="1"
+            android:scaleX="1.2"
+            android:scaleY="1"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="101dp"
+        android:layout_y="277dp"
+        android:id="@+id/store_phone"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/name"
+        android:layout_x="51dp"
+        android:layout_y="217dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView3"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/phone"
+        android:layout_x="49dp"
+        android:layout_y="274dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView4"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/pswd"
+        android:layout_x="52dp"
+        android:layout_y="329dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView5"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/desc"
+        android:layout_x="52dp"
+        android:layout_y="393dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView6"/>
+
+</AbsoluteLayout>

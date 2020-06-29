@@ -1,0 +1,379 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.lenovo.eatapplication.fragment.user.UserIndexFragment"
+              android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightblue"
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/user_picture"
+            android:layout_weight="0.13"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:text="河西区"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView23"
+                />
+
+            <TextView
+                android:text="阴 20℃"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/textView15"
+                android:gravity="center"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:background="@drawable/layout_border"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:id="@+id/imageView8"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:hint="游泳健身/办卡吗朋友"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="319dp"
+            android:layout_height="88dp"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView10"
+                android:layout_alignEnd="@+id/imageView10"
+                android:layout_alignRight="@+id/imageView10"
+                android:text="外卖配送" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView12"
+                android:layout_alignStart="@+id/imageView12"
+                android:layout_alignLeft="@+id/imageView12"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:text="美食餐饮" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView11"
+                android:layout_alignEnd="@+id/imageView11"
+                android:layout_alignRight="@+id/imageView11"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:text="每日鲜果" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView13"
+                android:layout_toStartOf="@+id/imageView11"
+                android:layout_toLeftOf="@+id/imageView11"
+                android:text="休闲娱乐" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView29"
+                android:layout_toRightOf="@+id/textView29"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/taiqiu" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kuaican" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView28"
+                android:layout_toRightOf="@+id/textView28"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/meishi" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_toRightOf="@+id/imageView13"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shuiguo" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="注销" />
+
+    </LinearLayout>
+
+
+
+<!--    <AbsoluteLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_weight="0.62">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/hspt"-->
+<!--            android:layout_x="11dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="11dp"-->
+<!--            android:id="@+id/imageView19"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/gongyu"-->
+<!--            android:layout_x="77dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="11dp"-->
+<!--            android:id="@+id/imageView14"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/cofe"-->
+<!--            android:layout_x="147dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="11dp"-->
+<!--            android:id="@+id/imageView16"/>-->
+
+<!--        <TextView-->
+<!--            android:text="药品/医院"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="2dp"-->
+<!--            android:layout_y="61dp"-->
+<!--            android:id="@+id/textView31"/>-->
+
+<!--        <TextView-->
+<!--            android:text="酒店/公寓"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="71dp"-->
+<!--            android:layout_y="60dp"-->
+<!--            android:id="@+id/textView32"/>-->
+
+<!--        <TextView-->
+<!--            android:text="下午茶"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="149dp"-->
+<!--            android:layout_y="63dp"-->
+<!--            android:id="@+id/textView33"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/skt"-->
+<!--            android:layout_x="141dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="87dp"-->
+<!--            android:id="@+id/imageView20"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/nnoo"-->
+<!--            android:layout_x="74dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="87dp"-->
+<!--            android:id="@+id/imageView21"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/niunai"-->
+<!--            android:layout_x="6dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="86dp"-->
+<!--            android:id="@+id/imageView15"/>-->
+
+<!--        <TextView-->
+<!--            android:text="牛奶鲜品"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="2dp"-->
+<!--            android:layout_y="138dp"-->
+<!--            android:id="@+id/textView37"/>-->
+
+<!--        <TextView-->
+<!--            android:text="奶茶饮品"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="71dp"-->
+<!--            android:layout_y="138dp"-->
+<!--            android:id="@+id/textView38"/>-->
+
+<!--        <TextView-->
+<!--            android:text="麻辣火锅"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="137dp"-->
+<!--            android:layout_y="139dp"-->
+<!--            android:id="@+id/textView39"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/kaorou"-->
+<!--            android:layout_x="209dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="14dp"-->
+<!--            android:id="@+id/imageView17"/>-->
+
+<!--        <TextView-->
+<!--            android:text="户外轰趴"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="204dp"-->
+<!--            android:layout_y="64dp"-->
+<!--            android:id="@+id/textView35"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="46dp"-->
+<!--            app:srcCompat="@drawable/kaichuan"-->
+<!--            android:layout_x="276dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="19dp"-->
+<!--            android:id="@+id/imageView18"/>-->
+
+<!--        <TextView-->
+<!--            android:text="烧烤专区"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="268dp"-->
+<!--            android:layout_y="66dp"-->
+<!--            android:id="@+id/textView34"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/more"-->
+<!--            android:layout_x="269dp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:layout_y="89dp"-->
+<!--            android:id="@+id/imageView23"/>-->
+
+<!--        <TextView-->
+<!--            android:text="更多"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="280dp"-->
+<!--            android:layout_y="139dp"-->
+<!--            android:id="@+id/textView36"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/qldy"-->
+<!--            android:layout_x="207dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_y="88dp"-->
+<!--            android:id="@+id/imageView22"/>-->
+
+<!--        <TextView-->
+<!--            android:text="情侣影院"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_x="202dp"-->
+<!--            android:layout_y="139dp"-->
+<!--            android:id="@+id/textView40"/>-->
+<!--    </AbsoluteLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

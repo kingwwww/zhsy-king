@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="260dp">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="28dp"
+        android:gravity="left|center"
+        android:layout_x="5dp"
+        android:layout_y="99dp"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textColor="?android:attr/editTextColor"
+        android:id="@+id/store_name"/>
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="32dp"
+        android:layout_x="7dp"
+        android:gravity="left|center"
+        android:layout_y="121dp"
+        android:id="@+id/store_desc"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_x="56dp"
+        android:layout_y="158dp"
+        android:id="@+id/store_phone"/>
+
+    <TextView
+        android:text="Phone:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="157dp"
+        android:id="@+id/textView41"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_x="20dp"
+        android:scaleType="fitXY"
+        android:layout_y="4dp"
+        android:id="@+id/store_portrait"/>
+</AbsoluteLayout>

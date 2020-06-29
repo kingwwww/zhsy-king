@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context="com.example.lenovo.eatapplication.fragment.user.UserSelfFragment"
+              android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/cofe"
+        android:layout_gravity="center"
+        android:id="@+id/image_user_portrait"
+        android:layout_weight="0.69"/>
+
+    <AbsoluteLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        >
+
+        <TextView
+            android:text="用户眠称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="52dp"
+            android:layout_y="38dp"
+            android:id="@+id/textView26"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_x="115dp"
+            android:layout_y="27dp"
+            android:id="@+id/text_user_name"/>
+
+        <TextView
+            android:text="联系电话"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="50dp"
+            android:layout_y="111dp"
+            android:id="@+id/textView43"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_x="114dp"
+            android:layout_y="99dp"
+            android:id="@+id/text_user_phone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_x="114dp"
+            android:layout_y="164dp"
+            android:id="@+id/text_user_password"/>
+
+        <TextView
+            android:text="密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="64dp"
+            android:layout_y="177dp"
+            android:id="@+id/textView42"/>
+
+        <Button
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="188dp"
+            android:layout_y="282dp"
+            android:id="@+id/btn_save"/>
+
+        <Button
+            android:text="返回首页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="52dp"
+            android:layout_y="281dp"
+            android:id="@+id/btn_return_index"/>
+    </AbsoluteLayout>
+
+</LinearLayout>

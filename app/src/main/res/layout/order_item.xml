@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="300dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_x="7dp"
+        android:layout_y="7dp">
+        <com.example.lenovo.eatapplication.util.RecyclerViewAtRecycleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/order_detail">
+
+        </com.example.lenovo.eatapplication.util.RecyclerViewAtRecycleView>
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="139dp"
+        android:layout_y="156dp"
+        android:id="@+id/people_name"/>
+
+    <TextView
+        android:text="联系电话："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="67dp"
+        android:layout_y="179dp"
+        android:id="@+id/textView44"/>
+
+    <TextView
+        android:text="详细地址："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="66dp"
+        android:layout_y="202dp"
+        android:id="@+id/textView53"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="139dp"
+        android:layout_y="182dp"
+        android:id="@+id/people_phone"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_x="138dp"
+        android:layout_y="206dp"
+        android:inputType="textMultiLine"
+        android:id="@+id/people_address"/>
+
+    <TextView
+        android:text="收货人姓名："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="53dp"
+        android:layout_y="156dp"
+        android:id="@+id/textView50"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="262dp"
+        android:layout_y="161dp"
+        android:id="@+id/orderPrice"/>
+
+    <TextView
+        android:text="------------------------------------------------------------------------------------------------"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="277dp"
+        android:id="@+id/textView55"/>
+
+    <Button
+        android:text="立即接单"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="25dp"
+        android:layout_y="231dp"
+        android:id="@+id/btn_receive"
+        android:textSize="12sp"
+        android:textColor="@color/forestgreen"/>
+
+    <Button
+        android:text="取消订单"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="167dp"
+        android:layout_y="232dp"
+        android:id="@+id/btn_refuse"
+        android:textSize="12sp"
+        android:textColor="@color/brown"/>
+
+</AbsoluteLayout>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.lenovo.eatapplication.fragment.user.SettleFragment"
+              android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="商品结算界面"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:gravity="center"
+        android:layout_weight="0.03"
+        android:textSize="18sp"
+        android:textColor="?android:attr/actionMenuTextColor"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:id="@+id/product_settle">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_weight="0.77">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="269dp"
+            android:layout_y="12dp"
+            android:id="@+id/orderPrice"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_x="115dp"
+            android:layout_y="98dp"
+            android:hint="请填写联系人电话"
+            android:id="@+id/input_phone"/>
+
+        <TextView
+            android:text="收货人姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="32dp"
+            android:layout_y="68dp"
+            android:id="@+id/people_name"/>
+
+        <TextView
+            android:text="收货人电话："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="32dp"
+            android:layout_y="108dp"
+            android:id="@+id/people_phone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_x="117dp"
+            android:layout_y="55dp"
+            android:hint="请填写姓名"
+            android:id="@+id/input_name"/>
+
+        <Spinner
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_x="24dp"
+            android:layout_y="33dp"
+            android:id="@+id/spinner_address"/>
+
+        <Button
+            android:text="返回首页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="63dp"
+            android:layout_y="211dp"
+            android:id="@+id/btn_return"/>
+
+        <Button
+            android:text="立即支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="208dp"
+            android:layout_y="212dp"
+            android:id="@+id/btn_hand"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_x="119dp"
+            android:layout_y="133dp"
+            android:hint="请填写详细地址"
+            android:id="@+id/input_address"/>
+
+        <TextView
+            android:text="详细地址："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="43dp"
+            android:layout_y="158dp"
+            android:id="@+id/people_address"/>
+    </AbsoluteLayout>
+</LinearLayout>

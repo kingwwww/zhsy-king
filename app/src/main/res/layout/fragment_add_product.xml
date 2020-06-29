@@ -1,0 +1,127 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.lenovo.eatapplication.fragment.store.AddProductFragment"
+              android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="选择分类："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="224dp"
+        android:id="@+id/textView18"/>
+
+    <Spinner
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_x="104dp"
+        android:layout_y="220dp"
+        android:id="@+id/pt_classfiy"/>
+
+    <TextView
+        android:text="商品名称："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="264dp"
+        android:id="@+id/textView19"/>
+
+    <TextView
+        android:text="单价："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="54dp"
+        android:layout_y="304dp"
+        android:id="@+id/textView17"/>
+
+    <TextView
+        android:text="库存总量："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="41dp"
+        android:layout_y="343dp"
+        android:id="@+id/textView21"/>
+
+    <TextView
+        android:text="商品说明："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="388dp"
+        android:id="@+id/textView20"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_x="106dp"
+        android:layout_y="293dp"
+        android:id="@+id/pt_price"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_x="106dp"
+        android:layout_y="329dp"
+        android:id="@+id/pt_stock"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="108dp"
+        android:layout_y="373dp"
+        android:id="@+id/pt_detail"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_x="107dp"
+        android:layout_y="251dp"
+        android:id="@+id/pt_name"/>
+
+    <TextView
+        android:text="添加商品界面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="134dp"
+        android:layout_y="14dp"
+        android:id="@+id/textView16"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:layout_x="102dp"
+        android:scaleType="fitXY"
+        android:layout_y="45dp"
+        android:id="@+id/image_btn_pt"/>
+
+    <Button
+        android:text="添加"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="65dp"
+        android:layout_y="440dp"
+        android:id="@+id/btn_pt_add"/>
+
+    <Button
+        android:text="返回首页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="192dp"
+        android:layout_y="439dp"
+        android:id="@+id/btn_return"/>
+
+</AbsoluteLayout>
